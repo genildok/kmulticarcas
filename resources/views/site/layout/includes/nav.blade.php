@@ -25,19 +25,21 @@
 
 
     <nav class="navbar navbar-expand-md  navbar-light menu-bar-bottom">
-
+      <div class="top_logo">
+        
+      </div>
       <!--Container logo  -->
-      <div class="container-logo">
-        <div class="logo">
+      <!-- <div class="container-logo">
+        <div class="logo"> -->
           <!--Logotipo  -->
-          <div class="logo-mobile">
+          <!-- <div class="logo-mobile">
             <a class="text-center  d-block d-md-none d-lg-none d-xl-none" href="#">
-              <img src="assets/site/img/logo.png" width="" alt="" class="img-fluid">
+              <img src="" width="" alt="" class="img-fluid">
               <p class="text-center"> Roupas e Acessórios</p>
             </a>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Botão menu -->
       <button type="button" class="navbar-toggler hidden-lg-up btn-menu" data-toggle="collapse" data-target="#collapsibleNavId"
@@ -62,7 +64,7 @@
       <div class="collapse navbar-collapse menu-bar-top" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link separator" href="#">
+            <a class="nav-link separator" href="{{ route('site.index') }}">
               <i class="fa fa-home d-block d-lg-none" aria-hidden="true"></i>
               <span class="d-none d-lg-block">Home</span>
             </a>

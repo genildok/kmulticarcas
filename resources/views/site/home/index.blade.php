@@ -87,7 +87,7 @@
               </div>
               <hr>
               <div class="card-footer p-0 mb-1 border-0">
-                <a href="{{ url('/show',[03]) }}" class="nav-link  bg-dark text-light ">
+                <a href="{{ route('site.show','03') }}" class="nav-link  bg-dark text-light ">
                   <i class="fa fa-plus-circle" aria-hidden="true"></i>
                   Detalhes
                 </a>

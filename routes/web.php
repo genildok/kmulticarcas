@@ -15,7 +15,4 @@ Route::get('/teste', function () {
     return view('welcome');
 });
 
-/* Route site*/
-$this->resource('/','Site\SiteController');
-
-$this->get('product/details/{id}','Site\SiteController@details');
+$this->resource('/site','Site\SiteController');

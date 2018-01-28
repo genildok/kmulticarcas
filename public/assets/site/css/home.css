@@ -17,13 +17,12 @@ body{
 }
  
 .header-top{
-    background-color:#00695C;
     background-image: url('/assets/site/img/logo-top.png');
     background-repeat: no-repeat;
     background-size: 100%;
     float: left;
     padding: 20px 0 0 15px;
-    height: 300px;
+    min-height: 365px;
     width: 100%;
 }
 .menu-bar-top{
@@ -183,10 +182,19 @@ body{
         width: 100%;
         padding:0;
         margin:0;
-        background: #00695C;
+       
+       
     }
     .logo{
         width: 100%;
+    }
+    .top_logo{
+        width: 100%;
+        min-height: 150px;
+        display: block;
+        background-image:url('/assets/site/img/logo-top.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
     .logo-mobile{
         display: flex;

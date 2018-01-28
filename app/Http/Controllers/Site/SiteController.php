@@ -16,8 +16,9 @@ class SiteController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return view('site.home.index');
+    {   
+        $page = 'index';
+        return view('site.home.index', compact('page',$page));
     }
 
     /**
@@ -49,7 +50,7 @@ class SiteController extends Controller
      */
     public function show($id)
     {
-        
+        return view('site.details.index',compact('id',$id));
     }
 
     /**
