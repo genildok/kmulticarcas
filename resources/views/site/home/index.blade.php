@@ -27,7 +27,7 @@
               </div>
               <hr>
               <div class="card-footer p-0 mb-1 border-0">
-              <a href="{{ url('/product/details',[01]) }}" class="nav-link  bg-dark text-light ">
+              <a href="{{ route('site.show','01') }}" class="nav-link  bg-dark text-light ">
                   <i class="fa fa-plus-circle" aria-hidden="true"></i>
                   Detalhes
                 </a>
@@ -56,7 +56,7 @@
               </div>
               <hr>
               <div class="card-footer p-0 mb-1 border-0">
-                <a href="{{ url('/product/details',[02]) }}" class="nav-link  bg-dark text-light ">
+                <a href="{{ route('site.show','02') }}" class="nav-link  bg-dark text-light ">
                   <i class="fa fa-plus-circle" aria-hidden="true"></i>
                   Detalhes
                 </a>
@@ -116,7 +116,7 @@
               </div>
               <hr>
               <div class="card-footer p-0 mb-1 border-0">
-                <a href="{{ url('/show',[04]) }}" class="nav-link  bg-dark text-light ">
+                <a href="{{ route('site.show','04') }}" class="nav-link  bg-dark text-light ">
                   <i class="fa fa-plus-circle" aria-hidden="true"></i>
                   Detalhes
                 </a>

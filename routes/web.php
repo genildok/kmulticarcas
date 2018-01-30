@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/teste', function () {
-    return view('welcome');
-});
+$this->get('/','Site\SiteController@index');
 
 $this->resource('/site','Site\SiteController');
+
+$this->post('/cart/add','Site\SiteController@cart_add');

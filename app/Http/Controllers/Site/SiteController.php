@@ -86,4 +86,11 @@ class SiteController extends Controller
     {
         //
     }
+
+    public function cart_add()
+    {
+        $message = "Está página está em construção";
+        return view('site.cart.cart_add',compact('message',$message));
+    }
+
 }

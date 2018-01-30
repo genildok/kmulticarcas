@@ -89,17 +89,42 @@
                         <hr class="my-3">
                         <div class="form-group">
                             <form action="{{ URL('/cart/add') }}" method="post">
-                                <div class="btn-group">
-                                    <button class="btn btn-warning" type="submit">
-                                        <i class="fa fa-shopping-cart"></i> Colocar no carrinho</button>
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                <div class="row">
+                                    <div class="col-sm-6 col-12">
+                                        <div class="btn-group">
+                                            <button class="btn btn-warning btn-block" type="submit">
+                                                <i class="fa fa-shopping-cart"></i> Colocar no carrinho</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </form>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- /row img -->
+    <hr class="my-4">
+
+    <!-- Nav tabs -->
+    <div class="container pt-0 pl-4 pr-4 pb-4">
+      
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a href="#description" data-toggle="tab" class="nav-link active" role="tab">Detalhes</a>
+            </li>
+            <li class="nav-item">
+                <a href="#products" data-toggle="tab" role="tab" class="nav-link">Outros</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane active" role="tabpanel" id="description">ddddddddddd</div>
+            <div class="tab-pane" role="tabpanel" id="products"></div>fffffffffffffffffff</div>
+        </div>
+
     </div>
 </div>
 @endsection
