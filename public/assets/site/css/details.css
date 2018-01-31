@@ -32,3 +32,30 @@
 {
     width: 70px;
 }
+.head-other
+{
+    margin-top: 20px;
+}
+.carousel{
+    padding: 10px;
+}
+.carousel-item
+{
+    background: #fff;
+}
+.content-similar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.similar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.similar img
+{
+    margin-left: 40px;
+}

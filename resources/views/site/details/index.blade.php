@@ -106,23 +106,43 @@
         </div>
     </div>
     <!-- /row img -->
-    <hr class="my-4">
 
-    <!-- Nav tabs -->
-    <div class="container pt-0 pl-4 pr-4 pb-4">
-      
-        <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item">
-                <a href="#description" data-toggle="tab" class="nav-link active" role="tab">Detalhes</a>
-            </li>
-            <li class="nav-item">
-                <a href="#products" data-toggle="tab" role="tab" class="nav-link">Outros</a>
-            </li>
-        </ul>
+    <div class="carousel  slide" data-ride="carousel">
+        <div class="head-other">
+            <h4 class="text-secondary">Produtos relacionados</h4>
+        </div>
+        <hr class="my-3">
+        <div class="carousel-inner" role="lisbox">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="content-similar">
+                        <div class="similar">
+                            <div class="card">
+                                <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail p-1 m-2" width="120" alt="Primeiro slide">
+                                <div class="card-footer  m-0 p-0">
+                                    <div class="card-title">
+                                        <p class="text-secondary">Camisa Pólo Nike</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail p-1 m-2" width="120" alt="Primeiro slide">
+                            <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail p-1 m-2" width="120" alt="Primeiro slide">
+                            <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail p-1 m-2" width="120" alt="Primeiro slide">
+                            <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-none d-sm-block img-thumbnail p-1 m-2" width="120"
+                                alt="Primeiro slide">
+                            <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-none d-sm-block img-thumbnail p-1 m-2" width="120"
+                                alt="Primeiro slide">
+                            <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-none d-sm-block img-thumbnail p-1 m-2" width="120"
+                                alt="Primeiro slide">
+                            <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-none d-sm-block img-thumbnail p-1 m-2" width="120"
+                                alt="Primeiro slide">
+                        </div>
+                    </div>
+                </div>
 
-        <div class="tab-content">
-            <div class="tab-pane active" role="tabpanel" id="description">ddddddddddd</div>
-            <div class="tab-pane" role="tabpanel" id="products"></div>fffffffffffffffffff</div>
+            </div>
+
+
         </div>
 
     </div>
