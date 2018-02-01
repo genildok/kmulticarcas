@@ -37,11 +37,15 @@
     margin-top: 20px;
 }
 .carousel{
-    padding: 10px;
+     padding: 10px;
+     margin-bottom: 20px;
 }
-.carousel-item
+.title-similar
 {
-    background: #fff;
+    width: 100%;
+    padding: 30px 70px 30px 70px;
+    margin-top: 30px;
+    font-size: 25px;
 }
 .content-similar
 {
@@ -55,7 +59,73 @@
     align-items: center;
     justify-content: center;
 }
-.similar img
+.similar-title{
+    
+    padding: 0 5px 0 5px;
+    margin: 0;
+}
+.similar .card
 {
-    margin-left: 40px;
+    width:150px;
+    margin-right: 20px;
+}
+.similar .form-group-lg a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+}
+.card-footer{
+    height: 68px;
+}
+
+
+
+
+@media (max-width:762px) {
+
+    .carousel{
+        padding: 10px;
+        margin-bottom: 20px;
+        background-color: #fff;
+   }
+   .carousel-item
+   {
+       padding-left: 20px;
+   }
+    .similar{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .similar-title{
+      font-size: 18px;
+      padding: 0;
+
+    }
+    .similar .card
+    {
+       margin: 0 25px 30px 0;
+       padding: 0;
+       width: 100px;
+    }
+    .similar .card img
+    {
+        width: 120px;
+    }
+    .similar .form-group-lg a{
+      
+    }
+    .card-footer{
+      padding: 0;
+      margin: 0;
+      height: 60px;
+      text-align: center;
+    }
+
+    .text-details
+    {
+       font-size: 10px;
+       padding: 10px;
+    }
 }

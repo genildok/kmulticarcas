@@ -106,45 +106,217 @@
         </div>
     </div>
     <!-- /row img -->
-
-    <div class="carousel  slide" data-ride="carousel">
-        <div class="head-other">
-            <h4 class="text-secondary">Produtos relacionados</h4>
-        </div>
+    <div class="title-similar">
+        <p class="text-secondary">Produtos Relacionados</p>
         <hr class="my-3">
-        <div class="carousel-inner" role="lisbox">
-            <div class="carousel-item active">
+    </div>
+    <div class="carousel slide" id="similar-img" data-ride="carousel">
+     
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item bg-white active">
                 <div class="row">
                     <div class="content-similar">
                         <div class="similar">
                             <div class="card">
-                                <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail p-1 m-2" width="120" alt="Primeiro slide">
-                                <div class="card-footer  m-0 p-0">
-                                    <div class="card-title">
-                                        <p class="text-secondary">Camisa Pólo Nike</p>
+                                <div class="content-similar-img">
+                                    <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail" alt="Primeiro slide">
+                                </div>
+                                <div class="card-footer m-0 p-0">
+                                    <div class="card-title similar-title">
+                                        <span class="text-secondary">Nike</span>
+                                    </div>
+                                    <hr class="my-1">
+                                    <div class="form-group-lg">
+                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                            <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
                                     </div>
                                 </div>
                             </div>
-                            <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail p-1 m-2" width="120" alt="Primeiro slide">
-                            <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail p-1 m-2" width="120" alt="Primeiro slide">
-                            <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail p-1 m-2" width="120" alt="Primeiro slide">
-                            <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-none d-sm-block img-thumbnail p-1 m-2" width="120"
-                                alt="Primeiro slide">
-                            <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-none d-sm-block img-thumbnail p-1 m-2" width="120"
-                                alt="Primeiro slide">
-                            <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-none d-sm-block img-thumbnail p-1 m-2" width="120"
-                                alt="Primeiro slide">
-                            <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-none d-sm-block img-thumbnail p-1 m-2" width="120"
-                                alt="Primeiro slide">
-                        </div>
-                    </div>
-                </div>
+                           
+                        </div><!-- /similar -->
+                        <div class="similar">
+                            <div class="card">
+                                <div class="content-similar-img">
+                                    <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="img-thumbnail" alt="Primeiro slide">
+                                </div>
+                                <div class="card-footer m-0 p-0">
+                                    <div class="card-title similar-title">
+                                        <span class="text-secondary">Nike</span>
+                                    </div>
+                                    <hr class="my-1">
+                                    <div class="form-group-lg">
+                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                            <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div><!-- /similar -->
+                        <div class="similar">
+                            <div class="card">
+                                <div class="content-similar-img">
+                                    <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="img-thumbnail" alt="Primeiro slide">
+                                </div>
+                                <div class="card-footer m-0 p-0">
+                                    <div class="card-title similar-title">
+                                        <span class="text-secondary">Nike</span>
+                                    </div>
+                                    <hr class="my-1">
+                                    <div class="form-group-lg">
+                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                            <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div><!-- /similar -->
+                        <div class="similar">
+                            <div class="card  d-none d-md-block">
+                                <div class="content-similar-img">
+                                    <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail" alt="Primeiro slide">
+                                </div>
+                                <div class="card-footer m-0 p-0">
+                                    <div class="card-title similar-title">
+                                        <span class="text-secondary">Nike</span>
+                                    </div>
+                                    <hr class="my-1">
+                                    <div class="form-group-lg">
+                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                            <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div><!-- /similar -->
+                        <div class="similar">
+                            <div class="card d-none d-md-block">
+                                <div class="content-similar-img">
+                                    <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail" alt="Primeiro slide">
+                                </div>
+                                <div class="card-footer m-0 p-0">
+                                    <div class="card-title similar-title">
+                                        <span class="text-secondary">Nike</span>
+                                    </div>
+                                    <hr class="my-1">
+                                    <div class="form-group-lg">
+                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                            <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div><!-- /similar -->
 
-            </div>
+                    </div><!-- /content-similar -->
+                </div><!-- /row -->
 
+            </div><!-- /carousel-item -->
+            <div class="carousel-item bg-white">
+                <div class="row">
+                    <div class="content-similar">
+                        <div class="similar">
+                            <div class="card">
+                                <div class="content-similar-img">
+                                    <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail" alt="Primeiro slide">
+                                </div>
+                                <div class="card-footer m-0 p-0">
+                                    <div class="card-title similar-title">
+                                        <span class="text-secondary">Reserva</span>
+                                    </div>
+                                    <hr class="my-1">
+                                    <div class="form-group-lg">
+                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                            <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div><!-- /similar -->
+                        <div class="similar">
+                            <div class="card">
+                                <div class="content-similar-img">
+                                    <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="img-thumbnail" alt="Primeiro slide">
+                                </div>
+                                <div class="card-footer m-0 p-0">
+                                    <div class="card-title similar-title">
+                                        <span class="text-secondary">Reserva</span>
+                                    </div>
+                                    <hr class="my-1">
+                                    <div class="form-group-lg">
+                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                            <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div><!-- /similar -->
+                        <div class="similar">
+                            <div class="card">
+                                <div class="content-similar-img">
+                                    <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="img-thumbnail" alt="Primeiro slide">
+                                </div>
+                                <div class="card-footer m-0 p-0">
+                                    <div class="card-title similar-title">
+                                        <span class="text-secondary">Reserva</span>
+                                    </div>
+                                    <hr class="my-1">
+                                    <div class="form-group-lg">
+                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                            <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div><!-- /similar -->
+                        <div class="similar">
+                            <div class="card  d-none d-md-block">
+                                <div class="content-similar-img">
+                                    <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail" alt="Primeiro slide">
+                                </div>
+                                <div class="card-footer m-0 p-0">
+                                    <div class="card-title similar-title">
+                                        <span class="text-secondary">Reserva</span>
+                                    </div>
+                                    <hr class="my-1">
+                                    <div class="form-group-lg">
+                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                            <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div><!-- /similar -->
+                        <div class="similar">
+                            <div class="card d-none d-md-block">
+                                <div class="content-similar-img">
+                                    <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail" alt="Primeiro slide">
+                                </div>
+                                <div class="card-footer m-0 p-0">
+                                    <div class="card-title similar-title">
+                                        <span class="text-secondary">Reserva</span>
+                                    </div>
+                                    <hr class="my-1">
+                                    <div class="form-group-lg">
+                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                            <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div><!-- /similar -->
 
+                    </div><!-- /content-similar -->
+                </div><!-- /row -->
+
+            </div><!-- /carousel-item -->
         </div>
 
+        <a role="button" data-slide="prev" href="#similar-img" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon  bg-dark"></span>
+        </a>
+        <a href="#similar-img" role="button" data-slide="next" class="carousel-control-next">
+            <span class="carousel-control-next-icon bg-dark"></span>
+        </a>
     </div>
 </div>
 @endsection
