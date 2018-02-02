@@ -108,7 +108,7 @@
     <!-- /row img -->
     <div class="title-similar">
         <p class="text-secondary">Produtos Relacionados</p>
-        <hr class="my-3">
+        <hr class="">
     </div>
     <div class="carousel slide" id="similar-img" data-ride="carousel">
      
@@ -121,11 +121,11 @@
                                 <div class="content-similar-img">
                                     <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail" alt="Primeiro slide">
                                 </div>
-                                <div class="card-footer m-0 p-0">
+                                <div class="card-footer footer-similar   m-0 p-0">
                                     <div class="card-title similar-title">
                                         <span class="text-secondary">Nike</span>
                                     </div>
-                                    <hr class="my-1">
+                                    <hr class="mt-2">
                                     <div class="form-group-lg">
                                         <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
@@ -139,11 +139,11 @@
                                 <div class="content-similar-img">
                                     <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="img-thumbnail" alt="Primeiro slide">
                                 </div>
-                                <div class="card-footer m-0 p-0">
+                                <div class="card-footer footer-similar m-0 p-0">
                                     <div class="card-title similar-title">
                                         <span class="text-secondary">Nike</span>
                                     </div>
-                                    <hr class="my-1">
+                                    <hr class="mt-2">
                                     <div class="form-group-lg">
                                         <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
@@ -157,11 +157,11 @@
                                 <div class="content-similar-img">
                                     <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="img-thumbnail" alt="Primeiro slide">
                                 </div>
-                                <div class="card-footer m-0 p-0">
+                                <div class="card-footer footer-similar m-0 p-0">
                                     <div class="card-title similar-title">
                                         <span class="text-secondary">Nike</span>
                                     </div>
-                                    <hr class="my-1">
+                                    <hr class="mt-2">
                                     <div class="form-group-lg">
                                         <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
@@ -175,11 +175,11 @@
                                 <div class="content-similar-img">
                                     <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail" alt="Primeiro slide">
                                 </div>
-                                <div class="card-footer m-0 p-0">
+                                <div class="card-footer footer-similar m-0 p-0">
                                     <div class="card-title similar-title">
                                         <span class="text-secondary">Nike</span>
                                     </div>
-                                    <hr class="my-1">
+                                    <hr class="mt-2">
                                     <div class="form-group-lg">
                                         <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
@@ -193,11 +193,11 @@
                                 <div class="content-similar-img">
                                     <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail" alt="Primeiro slide">
                                 </div>
-                                <div class="card-footer m-0 p-0">
+                                <div class="card-footer footer-similar m-0 p-0">
                                     <div class="card-title similar-title">
                                         <span class="text-secondary">Nike</span>
                                     </div>
-                                    <hr class="my-1">
+                                    <hr class="mt-2">
                                     <div class="form-group-lg">
                                         <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
@@ -219,11 +219,11 @@
                                 <div class="content-similar-img">
                                     <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail" alt="Primeiro slide">
                                 </div>
-                                <div class="card-footer m-0 p-0">
+                                <div class="card-footer footer-similar m-0 p-0">
                                     <div class="card-title similar-title">
                                         <span class="text-secondary">Reserva</span>
                                     </div>
-                                    <hr class="my-1">
+                                    <hr class="mt-2">
                                     <div class="form-group-lg">
                                         <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
@@ -237,11 +237,11 @@
                                 <div class="content-similar-img">
                                     <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="img-thumbnail" alt="Primeiro slide">
                                 </div>
-                                <div class="card-footer m-0 p-0">
+                                <div class="card-footer footer-similar m-0 p-0">
                                     <div class="card-title similar-title">
                                         <span class="text-secondary">Reserva</span>
                                     </div>
-                                    <hr class="my-1">
+                                    <hr class="mt-2">
                                     <div class="form-group-lg">
                                         <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
@@ -255,11 +255,11 @@
                                 <div class="content-similar-img">
                                     <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="img-thumbnail" alt="Primeiro slide">
                                 </div>
-                                <div class="card-footer m-0 p-0">
+                                <div class="card-footer footer-similar m-0 p-0">
                                     <div class="card-title similar-title">
                                         <span class="text-secondary">Reserva</span>
                                     </div>
-                                    <hr class="my-1">
+                                    <hr class="mt-2">
                                     <div class="form-group-lg">
                                         <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
@@ -273,11 +273,11 @@
                                 <div class="content-similar-img">
                                     <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail" alt="Primeiro slide">
                                 </div>
-                                <div class="card-footer m-0 p-0">
+                                <div class="card-footer footer-similar m-0 p-0">
                                     <div class="card-title similar-title">
                                         <span class="text-secondary">Reserva</span>
                                     </div>
-                                    <hr class="my-1">
+                                    <hr class="mt-2">
                                     <div class="form-group-lg">
                                         <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
@@ -291,13 +291,13 @@
                                 <div class="content-similar-img">
                                     <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="d-block img-thumbnail" alt="Primeiro slide">
                                 </div>
-                                <div class="card-footer m-0 p-0">
+                                <div class="card-footer footer-similar m-0 p-0">
                                     <div class="card-title similar-title">
                                         <span class="text-secondary">Reserva</span>
                                     </div>
-                                    <hr class="my-1">
+                                    <hr class="mt-2">
                                     <div class="form-group-lg">
-                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                        <a href="{{ route('site.show',225841) }}" class="btn-block  bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
                                     </div>
                                 </div>
@@ -307,6 +307,7 @@
 
                     </div><!-- /content-similar -->
                 </div><!-- /row -->
+                
 
             </div><!-- /carousel-item -->
         </div>

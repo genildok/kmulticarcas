@@ -19,8 +19,13 @@
     </ul>
   </div>
 </div>
+
 <nav class="navbar navbar-expand-md  navbar-light menu-bar-bottom">
-  <div class="top_logo"></div>
+  
+  <div class="top_logo d-block d-md-none">
+    <img src="{{ asset('/assets/site/img/logo-top.png') }}" alt="Logo Image">
+   <span class="sr-only">LOGO DO SITE</span> 
+  </div>
   <!-- Botão menu -->
   <button type="button" class="navbar-toggler hidden-lg-up btn-menu" data-toggle="collapse" data-target="#collapsibleNavId"
     aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">

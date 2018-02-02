@@ -83,6 +83,7 @@ body{
     font-size: 25px;
     color: #fff;
 }
+
 .card-width{
     max-width:200px;
 }
@@ -106,6 +107,10 @@ body{
 }
 .carousel-img img{
     margin-bottom: 50px;
+}
+.footer-img-content
+{
+   height: 40px !important;
 }
 .footer{
     padding: 0;
@@ -162,7 +167,11 @@ body{
 
 
 @media (max-width: 992px) { 
-   
+    nav
+    {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
     .icon-status-cart{
         border: 1px solid #fff;
         font-size: 10px;
@@ -186,14 +195,10 @@ body{
     .logo{
         width: 100%;
     }
-    .top_logo{
+    .top_logo>img{
         width: 100%;
-        min-height: 100px;
-        display: block;
-        background-image:url('/assets/site/img/logo-top.png');
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
+    } 
+
     .logo-mobile{
         display: flex;
         align-items: center;
@@ -239,7 +244,11 @@ body{
     .card-header{
         background-color: #212121;
     }
-  
+    .footer-img-content
+    {
+       height: 40px !important;
+    }
+
     .card-header{
         padding: 5px;
         font-size: 14px;
