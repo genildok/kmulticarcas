@@ -11,8 +11,9 @@
 |
 */
 
-$this->get('/','Site\SiteController@index');
 
-$this->resource('/site','Site\SiteController');
-
-$this->post('/cart/add','Site\SiteController@cart_add');
+$this->resources([
+        '/site' => 'Site\SiteController',
+        '/product' =>'Site\ProductController',
+        '/sales' =>'Site\SalesController'
+    ]);

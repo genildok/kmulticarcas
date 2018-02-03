@@ -127,7 +127,7 @@
                                     </div>
                                     <hr class="mt-2">
                                     <div class="form-group-lg">
-                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                        <a href="{{ route('product.show',225841) }}" class="btn-block bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
                                     </div>
                                 </div>
@@ -145,7 +145,7 @@
                                     </div>
                                     <hr class="mt-2">
                                     <div class="form-group-lg">
-                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                        <a href="{{ route('product.show',225841) }}" class="btn-block bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
                                     </div>
                                 </div>
@@ -163,7 +163,7 @@
                                     </div>
                                     <hr class="mt-2">
                                     <div class="form-group-lg">
-                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                        <a href="{{ route('product.show',225841) }}" class="btn-block bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
                                     </div>
                                 </div>
@@ -181,7 +181,7 @@
                                     </div>
                                     <hr class="mt-2">
                                     <div class="form-group-lg">
-                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                        <a href="{{ route('product.show',225841) }}" class="btn-block bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
                                     </div>
                                 </div>
@@ -199,7 +199,7 @@
                                     </div>
                                     <hr class="mt-2">
                                     <div class="form-group-lg">
-                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                        <a href="{{ route('product.show',225841) }}" class="btn-block bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
                                     </div>
                                 </div>
@@ -225,7 +225,7 @@
                                     </div>
                                     <hr class="mt-2">
                                     <div class="form-group-lg">
-                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                        <a href="{{ route('product.show',225841) }}" class="btn-block bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
                                     </div>
                                 </div>
@@ -243,7 +243,7 @@
                                     </div>
                                     <hr class="mt-2">
                                     <div class="form-group-lg">
-                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                        <a href="{{ route('product.show',225841) }}" class="btn-block bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
                                     </div>
                                 </div>
@@ -261,7 +261,7 @@
                                     </div>
                                     <hr class="mt-2">
                                     <div class="form-group-lg">
-                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                        <a href="{{ route('product.show',225841) }}" class="btn-block bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
                                     </div>
                                 </div>
@@ -279,7 +279,7 @@
                                     </div>
                                     <hr class="mt-2">
                                     <div class="form-group-lg">
-                                        <a href="{{ route('site.show',225841) }}" class="btn-block bg-dark text-details">
+                                        <a href="{{ route('product.show',225841) }}" class="btn-block bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
                                     </div>
                                 </div>
@@ -297,7 +297,7 @@
                                     </div>
                                     <hr class="mt-2">
                                     <div class="form-group-lg">
-                                        <a href="{{ route('site.show',225841) }}" class="btn-block  bg-dark text-details">
+                                        <a href="{{ route('product.show',225841) }}" class="btn-block  bg-dark text-details">
                                             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Detalhes</a>
                                     </div>
                                 </div>

@@ -58,14 +58,14 @@
         <a class="nav-link" href="{{ url('/sales') }}">Ofertas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ url('/news') }}">Novidades</a>
+        <a class="nav-link" href="{{ route('product.index',['q' => 'news'])}}">Novidades</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Marcas</a>
         <div class="dropdown-menu" aria-labelledby="dropdownId">
-          <a class="dropdown-item" href="{{ url('/brand',[01]) }}">Nike</a>
-          <a class="dropdown-item" href="{{ url('/brand',[02]) }}">Reserva</a>
-          <a class="dropdown-item" href="{{ url('/brand',[03]) }}">Adidas</a>
+          <a class="dropdown-item" href="{{ route('product.index',['q' =>'Nike']) }}">Nike</a>
+          <a class="dropdown-item" href="{{ route('product.index',['q' => 'Reserva']) }}">Reserva</a>
+          <a class="dropdown-item" href="{{ route('product.index',['q' => 'Adidas'])  }}">Adidas</a>
         </div>
       </li>
       <li class="nav-item">
