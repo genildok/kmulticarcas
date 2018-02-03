@@ -6,11 +6,11 @@
     <nav class="breadcrumb bg-white border-0 ml-2 mt-3">
     
             <span class="breadcrumb-item text-dark">{{ $page }}</span>
-        @if (!isset($brand))
-            <span class="breadcrumb-item active">{{ $category }}</span>
-        @else
+        @if (isset($brand))
             <span class="breadcrumb-item text-dark">{{ $category }}</span>
             <span class="breadcrumb-item active">{{ $brand }}</span>
+        @else
+            <span class="breadcrumb-item active">{{ $category }}</span>
         @endif
 
        

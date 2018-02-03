@@ -55,25 +55,25 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ url('/sales') }}">Ofertas</a>
+        <a class="nav-link" href="{{ route('product.sale') }}">Ofertas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ route('product.index',['q' => 'news'])}}">Novidades</a>
+        <a class="nav-link" href="{{ route('product.new') }}">Novidades</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Marcas</a>
         <div class="dropdown-menu" aria-labelledby="dropdownId">
-          <a class="dropdown-item" href="{{ route('product.index',['q' =>'Nike']) }}">Nike</a>
-          <a class="dropdown-item" href="{{ route('product.index',['q' => 'Reserva']) }}">Reserva</a>
-          <a class="dropdown-item" href="{{ route('product.index',['q' => 'Adidas'])  }}">Adidas</a>
+          <a class="dropdown-item" href="{{ route('product.brand',['q' => 'nike']) }}">Nike</a>
+          <a class="dropdown-item" href="{{ route('product.brand',['q' => 'reserva']) }}">Reserva</a>
+          <a class="dropdown-item" href="{{ route('product.brand',['q' => 'adidas']) }}">Adidas</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ url('/contact') }}">Contato</a>
+        <a class="nav-link" href="{{ route('site.create') }}">Contato</a>
       </li>
     </ul>
     <!-- Form search -->
-    <form action="{{ url('/product/search') }}" class="form-inline form-search" method="POST">
+    <form action="{{ route('product.search') }}" class="form-inline form-search" method="POST">
       <div class="input-group form-search-content">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <input type="text" name="search" class="form-control mr-1" placeholder="O que você procura ?">

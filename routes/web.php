@@ -11,9 +11,14 @@
 |
 */
 
+$this->get('/product/sale','Site\ProductController@sale')->name('product.sale');
+$this->get('product/new','Site\ProductController@new')->name('product.new');
+$this->get('/product/search','Site\ProductController@search')->name('product.search');
+$this->get('/product/brand/{q}','Site\ProductController@brand')->name('product.brand');
+
+/*$this->get('/site/contact','Site\SiteController@contact')->name('site.contact');*/
 
 $this->resources([
         '/site' => 'Site\SiteController',
-        '/product' =>'Site\ProductController',
-        '/sales' =>'Site\SalesController'
+        '/product' =>'Site\ProductController'
     ]);

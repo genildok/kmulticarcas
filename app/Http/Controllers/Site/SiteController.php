@@ -8,8 +8,6 @@ use App\Http\Controllers\Controller;
 class SiteController extends Controller
 {
 
-
-
     /**
      * Display a listing of the resource.
      *
@@ -28,7 +26,14 @@ class SiteController extends Controller
      */
     public function create()
     {
-        //
+        $title      = "Contato";
+        $page       = "Site";
+        $category   = "Contato";;
+
+        return view('site.contact.index',compact(
+                    'title',$title,
+                    'page',$page,
+                    'category',$category ));
     }
 
     /**
@@ -39,7 +44,14 @@ class SiteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $user       = $request->user;
+        $email      = $request->email;
+        $message    = $request->mensage;
+
+        
+        echo $user , $mensage , $message;
+
     }
 
     /**
@@ -50,6 +62,7 @@ class SiteController extends Controller
      */
     public function show($id)
     {
+        /** return view contact**/
         return view('site.details.index',compact('id',$id));
     }
 

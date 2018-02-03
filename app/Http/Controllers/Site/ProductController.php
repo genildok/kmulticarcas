@@ -14,30 +14,7 @@ class ProductController extends Controller
      */
     public function index(Request $request)
     {   
-        $brand = $request->q;
-        $page = "Produtos";
-       
-
-        if($brand == 'news')
-        {
-            $title =  'Novidades';
-            $category = 'Novidades';
-            $brand = null;
-            
-        }else{
-            $title = "Produtos da " . $brand;
-            $category = "Marca";
-        }
-
-        
-      
-        
-
-       return view('site.product.index',compact(
-                   'title',$title,
-                   'page',$page,
-                   'category',$category,
-                   'brand',$brand));
+     
     }
 
     /**
@@ -104,5 +81,44 @@ class ProductController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function sale()
+    {
+        /** return sales db **/
+        $title = "Produtos em Oferta";
+        $page = "Produtos";
+        $category = "Ofertas";
+
+        return view('site.product.index',compact(
+            'title',$title,'page',$page,'category',$category));
+    }
+
+    public function brand(Request $request)
+    {
+        $brand      = $request->q;
+        $page       = "Produtos";
+        $title      = "Produtos da " . $brand;
+        $category   = "Marca";
+
+        return view('site.product.index', compact(
+            'title',$title,
+            'page',$page,
+            'category',$category,'brand',$brand));
+    }
+
+    public function new()
+    {
+        /** return new item db **/
+        $title      = "Novidades";
+        $page       = "Produtos";
+        $category   = "Novidades";
+
+        
+       return view('site.product.index', compact(
+                    'title',$title,
+                    'page',$page,
+                    'category',$category));
+        
     }
 }

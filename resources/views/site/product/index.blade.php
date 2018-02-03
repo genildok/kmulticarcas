@@ -15,7 +15,7 @@
               <div class="card-header  text-light text-center text-md-left bg-dark">
                 Camisa Polo
               </div>
-              <img src="assets/site/img/product-img/01.jpg" class="card-img" alt="">
+              <img src="{{ asset('assets/site/img/product-img/01.jpg') }}" class="card-img" alt="">
               <hr>
               <div class="card-subtitle">
                 <p class="text-danger font-weight-bold pl-2">R$ 65,00
@@ -36,7 +36,6 @@
             </div>
             <!-- /col Galeria -->
           </div>
-          {{--  ********************************  --}}
           @endfor
         </div>
         <!-- /row galeria -->
