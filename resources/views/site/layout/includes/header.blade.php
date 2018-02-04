@@ -1,6 +1,6 @@
 <div class="m-3 mt-5">
     <div class="card-header bg-dark border-0">
-        <span class="new-itens text-light">{{ $title }}</span>
+        <span class="new-itens text-light text-muted">{{ $title }}</span>
     </div>
 
     <nav class="breadcrumb bg-white border-0 ml-2 mt-3">

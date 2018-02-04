@@ -23,24 +23,22 @@
       <div class="links ">
         <ul class="nav d-inline-block d-md-inline-flex">
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="{{ url('/') }}">Home</a>
+            <a class="nav-link text-secondary" href="{{ route('site.index') }}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="{{ url('/news') }}">Novidades</a>
+            <a class="nav-link text-secondary" href="{{ route('product.new') }}">Novidades</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="{{ url('/sales') }}">Ofertas</a>
+            <a class="nav-link text-secondary" href="{{ route('product.sale') }}">Ofertas</a>
           </li>
         </ul>
         <ul class="nav d-inline-block d-md-inline-flex">
-          <li class="nav-item">
-            <a class="nav-link text-secondary" href="{{ url('/brand') }}">Marcas</a>
-          </li>
+         
           <li class="nav-item">
             <a class="nav-link text-secondary" href="{{ url('/dealer')}}">Revendedor</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="{{ url('/contact') }}">Contato</a>
+            <a class="nav-link text-secondary" href="{{ route('site.contact') }}">Contato</a>
           </li>
         </ul>
 

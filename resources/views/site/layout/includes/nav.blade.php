@@ -62,14 +62,14 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Marcas</a>
-        <div class="dropdown-menu" aria-labelledby="dropdownId">
+        <div class="dropdown-menu" aria-labelledby="dropdownId" style="border:none">
           <a class="dropdown-item" href="{{ route('product.brand',['q' => 'nike']) }}">Nike</a>
           <a class="dropdown-item" href="{{ route('product.brand',['q' => 'reserva']) }}">Reserva</a>
           <a class="dropdown-item" href="{{ route('product.brand',['q' => 'adidas']) }}">Adidas</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ route('site.create') }}">Contato</a>
+        <a class="nav-link" href="{{ route('site.contact') }}">Contato</a>
       </li>
     </ul>
     <!-- Form search -->

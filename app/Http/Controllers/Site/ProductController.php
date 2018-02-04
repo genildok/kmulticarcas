@@ -96,9 +96,9 @@ class ProductController extends Controller
 
     public function brand(Request $request)
     {
-        $brand      = $request->q;
+        $brand      = ucfirst($request->q);
         $page       = "Produtos";
-        $title      = "Produtos da " . $brand;
+        $title      = "Produtos da " . $brand;;
         $category   = "Marca";
 
         return view('site.product.index', compact(

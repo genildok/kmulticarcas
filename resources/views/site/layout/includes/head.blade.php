@@ -9,3 +9,5 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/site/css/home.css') }}">
   <!-- Custom style details page -->
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/site/css/details.css') }}">
+  <!-- Custom style carousel index -->
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/site/css/carousel.css') }}">
