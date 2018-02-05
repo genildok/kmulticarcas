@@ -10,11 +10,11 @@
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <div class="form-group">
                     <label class="text-secondary" for="User">Nome:</label>
-                    <input type="text" class="form-control"  name="user">
+                    <input type="text" class="form-control"  name="user" value="{{ Auth::user() ? Auth::user()->name : '' }}">
                 </div>
                 <div class="form-group">
                     <label class="text-secondary" for="Email">Email:</label>
-                    <input type="email" class="form-control" name="email">
+                    <input type="email" class="form-control" name="email" value="{{ Auth::user() ? Auth::user()->email : '' }}">
                 </div>
                 <div class="form-group">
                     <label class="text-secondary" for="Subject">Assunto:</label>

@@ -25,3 +25,7 @@ $this->get('/product/brand/{q}','Site\ProductController@brand')->name('product.b
 $this->resources([
         '/product' =>'Site\ProductController'
     ]);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

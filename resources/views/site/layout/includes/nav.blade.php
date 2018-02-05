@@ -9,13 +9,22 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-light" href="{{ url('/login') }}">
-          <span class="d-block ">Login</span>
-        </a>
+        @if (Auth::check())
+         <span class="d-block ">{{ Auth::user()->name }}</span>
+        @else
+           <a class="nav-link text-light" href="{{ route('login') }}"><i class="fa fa-user"></i></a>
+        @endif
       </li>
+      @if (Auth::check())
       <li class="nav-item">
-        <a class="nav-link text-light" href="{{url('/profile')}}">Meu dados</a>
+        <a  class="nav-link text-light" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout').submit()">
+          <i class="fa fa-sign-out"></i>
+        </a>
+
+        <form action="{{ route('logout') }}" method="post" id="logout">
+          <input type="hidden" name="_token" value="{{ csrf_token() }}"></form>
       </li>
+      @endif
     </ul>
   </div>
 </div>
