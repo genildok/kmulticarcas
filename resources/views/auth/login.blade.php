@@ -1,69 +1,51 @@
-@extends('layouts.app')
+@extends('site.layout.auth')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
-
-                <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('login') }}">
-                        {{ csrf_field() }}
-
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Login
-                                </button>
-
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Forgot Your Password?
-                                </a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-md-7 col-left d-none d-md-block">
+      <div class="container-left">
+        <div class="container-left-logo">
+          <img src="{{ asset('assets/site/img/logo.png') }}" class="img-rounded" alt="Login Image">
         </div>
+      <!-- Include social networks -->
+      @include('site.layout.includes.social')
+      </div>
+      <!-- /container-left -->
     </div>
+    <div class="col-12 col-md-5 col-right">
+      <div class="header-form">
+        <h1 class="text-muted text-center p-4">Login</h1>
+      </div>
+      <div class="container-right">
+        <hr class="my-3">
+        <form class="form-check-inline login-form" action="{{ route('login') }}" method="post">
+          <div class="form-group">
+            <label for="user">Usuário:</label>
+            <input type="text" name="name" class="form-control" placeholder="Digite seu email" aria-describedby="helpId">
+            <small id="helpId" class="text-danger"></small>
+          </div>
+          <div class="form-group">
+            <label for="">Senha:</label>
+            <input type="password" class="form-control" name="password" placeholder="Senha">
+          </div>
+          <div class="row pr-3 pl-3">
+            <div class="col-6">
+              <button type="submit" class="btn btn-primary btn-block mt-4">Entrar</button>
+            </div>
+            <div class="col-6">
+              
+                <button type="button" onclick="location.href='{{ route('site.index') }}'" class="btn btn-warning btn-block  mt-4">Voltar</button>
+             
+            </div>
+          </div>
+
+          <hr class="my-3">
+          <a class="btn btn-link text-center" href="register.blade.php" role="button">Criar conta</a>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Include fone developer -->
+  @include('site.layout.includes.dev_fone')
 </div>
-@endsection
