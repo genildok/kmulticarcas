@@ -3,13 +3,12 @@
 @section('content')
 <div class="container pt-5">
   <div class="row">
-    <div class="col-md-7 col-left d-none d-md-block">
+    <div class="col-md-7 col-12 col-left">
       <div class="container-left">
-        <div class="container-left-logo">
+        <div class="container-left-logo d">
           <img src="{{ asset('assets/site/img/logo.png') }}" class="img-rounded" alt="Login Image">
         </div>
-      <!-- Include social networks -->
-      @include('site.layout.includes.social')
+       
       </div>
       <!-- /container-left -->
     </div>
@@ -41,11 +40,13 @@
           </div>
 
           <hr class="my-3">
-          <a class="btn btn-link text-center" href="register.blade.php" role="button">Criar conta</a>
+          <a class="btn btn-link text-center" href="{{ route('register') }}" role="button">Criar conta</a>
         </form>
       </div>
     </div>
+    <!-- Include social networks -->
+        {{--  @include('site.layout.includes.social')  --}}
+         @include('site.layout.includes.endereco')
   </div>
-  <!-- Include fone developer -->
-  @include('site.layout.includes.dev_fone')
+  
 </div>

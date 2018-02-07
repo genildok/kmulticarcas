@@ -68,47 +68,8 @@
         </div>
 
       </div>
-
-      <div class="social-networks">
-
-        <div class="address">
-          <p>
-            <span class="font-weight-bold h6">Kaeller Roupas</span>
-            <br>(21) 99999-9999 / (21) 3333-4455
-            <br>Belford Roxo - Retiro Feliz </p>
-        </div>
-
-        <div class="d-block d-md-none">
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link social-icons" href="#">
-                <i class="fa fa-facebook-square" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link social-icons" href="#">
-                <i class="fa fa-youtube-square" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link social-icons" href="#">
-                <i class="fa fa-google-plus-square" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="copyright text-muted">
-          <p>Kaeller
-            <i class="fa fa-copyright" aria-hidden="true"></i> | Todos os direitos reservados.</p>
-          <P>
-            <a class="btn-link text-light" href="https://facebook.com/genildo.k" target="_blank">GK Desenvolvimento</a>
-          </P>
-        </div>
-
-
-      </div>
-
+      <!-- include .social-networks -->
+      @include('site.layout.includes.social')
     </div>
     <!-- Fin do container -->
   </div>

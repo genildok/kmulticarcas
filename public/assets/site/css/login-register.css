@@ -1,5 +1,3 @@
-
-
 .col-left
 {
     border-right: 2px solid rgba(21, 21, 21, .1);
@@ -12,7 +10,6 @@
     /* border: 1px solid #ff5522; */
     width: 100%;
     height: 300px;
-
 }
 .container-right
 {
@@ -25,6 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom:0;
 }
 .login-form
 {
@@ -33,7 +31,6 @@
     width: 400px;
     margin-left: 50px;
 }
-
 .developer
 {
     display: flex;
@@ -42,6 +39,20 @@
     width: 100%;
     padding-top: 15px;
     /* border: 1px solid #ff5522; */
+}
+.address
+{
+    padding: 0;
+    margin: 0;
+}
+.footer-dev
+{
+    font-size: 13px;
+}
+.social-networks
+{
+    padding: 0;
+    margin: 0;
 }
 
 @media(max-width:962px)

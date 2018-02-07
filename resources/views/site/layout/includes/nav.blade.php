@@ -43,7 +43,7 @@
 
   <div class="uc-menu">
     <!-- Btn user -->
-    <button class="navbar-toggler hidden-lg-up btn-user" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+    <button class="navbar-toggler hidden-lg-up btn-user" type="button"  onclick=location.href="{{ route('login') }}"
       aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fa fa-user text-light" aria-hidden="true"></i>
     </button>

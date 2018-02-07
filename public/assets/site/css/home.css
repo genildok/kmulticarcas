@@ -130,25 +130,25 @@ body{
    font-size: 100%;
 }
 .address{
-   color: #ffffff;
-   float: right;
    font-size: 100%;
    position: relative;
-   padding-top: 15px;
-   text-align: center;
+   padding:0;
+   margin: 0;
 
 }
 .social-d{
     /* border: 1px solid #000 !important; */
-    position: relative;
+    position: relative; 
     float: right;
     font-size: 30px;
     width: 200px;
 }
 .social-networks{
     background:#424242;
-    float: left;
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 50px;
     width: 100%;
 }
 .social-icons{
@@ -160,13 +160,24 @@ body{
 .social-icons:hover{
     color: #90A4AE;
 }
-.copyright{
-    position: relative;
-    float: left;
-    color: #ffffff;
-    font-size: 100%;
-    margin-top: 20px;
-    text-align: center;
+
+.footer-dev
+{
+    font-size: 12px;
+    padding-top: 5px;
+  
+}
+.footer-dev a .fone-dev
+{
+    font-size: 12px;
+}
+.content-footer
+{
+    background-color: #212121;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -361,17 +372,9 @@ body{
        font-size: 80%;
        /* border: 1px solid #ffffff; */
     }
-    .address{
-        float: none;
-       color: #ffffff !important;
-       text-align: center;
-       font-size: 75%;
-    }
     .social-networks{
-        background: #424242;
-        float: left;
-        padding: 10px;
-        width: 100%;
+       padding: 0;
+       margin: 0;
     }
     .social-icons{
         color: #E0E0E0;
@@ -382,10 +385,9 @@ body{
     .social-icons:hover{
         color: #212121;
     }
-    .copyright{
+    .copyright
+    {
         float: none;
-        color: #ffffff;
         font-size: 75%;
-        text-align: center;
     }
 }
