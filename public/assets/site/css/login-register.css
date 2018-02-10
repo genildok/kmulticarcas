@@ -31,28 +31,25 @@
     width: 400px;
     margin-left: 50px;
 }
-.developer
+.footer
 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    padding-top: 15px;
-    /* border: 1px solid #ff5522; */
+    margin-top: 25px;
+    /* border: 1px solid #000000; */
 }
-.address
+.footer .address
 {
-    padding: 0;
-    margin: 0;
+    text-align: center;
+    /* border: 1px solid #000000; */
 }
-.footer-dev
+.social
 {
-    font-size: 13px;
-}
-.social-networks
-{
-    padding: 0;
-    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #000000; */
 }
 
 @media(max-width:962px)

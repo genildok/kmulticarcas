@@ -115,69 +115,62 @@ body{
 {
    height: 40px !important;
 }
-.footer{
+.footer
+{
+    background-color: #E0E0E0;
+    color: #E0E0E0;
     padding: 0;
     margin: 0;
-    
 }
-.links{
-    background: #212121;
-    padding: 30px;
-    width: 100%;
+.footer .address
+{
+    color: #424242;
+    text-align: center;
+    margin-top: 10px; 
+    /* border: 1px solid #ffffff;*/
 }
-.links li{
-   text-align: center;
-   font-size: 100%;
-}
-.address{
-   font-size: 100%;
-   position: relative;
-   padding:0;
-   margin: 0;
-
-}
-.social-d{
-    /* border: 1px solid #000 !important; */
-    position: relative; 
-    float: right;
-    font-size: 30px;
-    width: 200px;
-}
-.social-networks{
-    background:#424242;
+.footer .social
+{
+    /* border: 1px solid #ffffff; */
     display: flex;
     align-items: center;
-    justify-content:center;
-    padding: 50px;
-    width: 100%;
-}
-.social-icons{
-    color: #E0E0E0;
-    font-size: 110%;
-    padding:0;
-    margin:5px;
-}
-.social-icons:hover{
-    color: #90A4AE;
+    justify-content: center;   
+    margin-top: 5px; 
 }
 
-.footer-dev
+.footer .copyright,.copydev
 {
-    font-size: 12px;
-    padding-top: 5px;
-  
-}
-.footer-dev a .fone-dev
-{
-    font-size: 12px;
-}
-.content-footer
-{
-    background-color: #212121;
+    color: #E0E0E0;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #424242;
     padding: 20px;
+}
+.footer .pagseguro
+{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.footer .pagseguro img
+{
+    padding: 20px;
+    width: 80%;
+}
+.links
+{
+    border: 1px solid #ffffff;
+    background-color: #212121;
+    margin-bottom: 20px;
+}
+.links a
+{
+    color: #E0E0E0;
+}
+.links a:hover
+{
+    color: #90A4AE;
+    text-decoration: underline;
 }
 
 
@@ -263,11 +256,6 @@ body{
     .card-header{
         background-color: #212121;
     }
-    .footer-img-content
-    {
-       height: 40px !important;
-    }
-
     .card-header{
         padding: 5px;
         font-size: 14px;
@@ -354,40 +342,28 @@ body{
         padding: 0;
         margin: 0;
     }
-   
-    .footer{
-        float: left;
-        position: relative;
-        width: 100%;
-    }
-    .links{
-        background: #212121;
-        padding: 0;
-        margin: 0 auto;
-        width: 100%;
-    }
-   
-    .links li{
-       text-align:center;
-       font-size: 80%;
-       /* border: 1px solid #ffffff; */
-    }
-    .social-networks{
-       padding: 0;
-       margin: 0;
-    }
-    .social-icons{
-        color: #E0E0E0;
-        font-size: 110%;
-        padding:0;
-        margin:5px;
-    }
-    .social-icons:hover{
-        color: #212121;
-    }
-    .copyright
+    .footer .copyright,.copydev
     {
-        float: none;
-        font-size: 75%;
+        border: none;
+        font-size: 10pt;
+        color: #E0E0E0;
+        display: flex;
+        justify-content: center;
+        background-color: #424242;
+        padding: 20px;
+    }
+
+    .footer .pagseguro
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .footer .address,.copyright
+    {
+        font-size: 0.75em;
+    }
+    .footer .social
+    {
+        margin-bottom: 10px;
     }
 }
