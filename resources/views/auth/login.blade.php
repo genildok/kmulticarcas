@@ -22,12 +22,18 @@
         <form class="form-check-inline login-form" action="{{ route('login') }}" method="post">
           <div class="form-group">
             <label for="user">Usuário:</label>
-            <input type="text" name="name" class="form-control" placeholder="Digite seu email" aria-describedby="helpId">
-            <small id="helpId" class="text-danger"></small>
+            <input type="text" name="email" class="form-control" placeholder="Digite seu email" aria-describedby="helpId">
+            @if($errors->has('email'))
+              <small id="helpId" class="text-danger">{{ $errors->first('email') }}</small>
+            @endif
+       
           </div>
           <div class="form-group">
             <label for="">Senha:</label>
             <input type="password" class="form-control" name="password" placeholder="Senha">
+            @if($errors->has('password'))
+            <small class="text-danger">{{ $errors->first('password') }}</small>
+            @endif
           </div>
           <div class="row pr-3 pl-3">
             <div class="col-6">
