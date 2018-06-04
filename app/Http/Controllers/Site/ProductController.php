@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Site;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Model\Product;
 
 class ProductController extends Controller
 {
@@ -46,7 +47,8 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        return view('site.details.index');
+        $product = Product::find($id);
+        return view('site.details.index',compact('product'));
     }
 
     /**

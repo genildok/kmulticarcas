@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Site;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Model\Product;
 
 class SiteController extends Controller
 {
@@ -11,7 +12,8 @@ class SiteController extends Controller
     public function index()
     {   
         $page = 'index';
-        return view('site.home.index', compact('page',$page));
+        $products = Product::limit(4)->get();
+        return view('site.home.index', compact('page','products'));
     }
 
 

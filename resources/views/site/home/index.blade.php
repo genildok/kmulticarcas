@@ -9,123 +9,36 @@
         <div class="row text-center text-lg-left my-3 ml-md-5">
   
           <!-- col Galeria -->
-          <div class="col-6 col-lg-3">
-  
-            <div class="card-block card-width mb-5">
-              <div class="card-header  text-light text-center text-md-left bg-dark">
-                Camisa Polo
+          @foreach ($products as $product)
+            <div class="col-6 col-lg-3">
+    
+              <div class="card-block card-width mb-5">
+                <div class="card-header  text-light text-center text-md-left bg-dark">
+                    {{ $product->name }}
+                </div>
+                <img src="{{ asset('assets/painel/img/' . $product->image) }}" class="card-img" alt="">
+                <hr>
+                <div class="card-subtitle">
+                  <p class="text-danger font-weight-bold pl-2">R$ {{ number_format($product->price,2,',','.') }}
+                    <span class="text-dark font-italic font-weight-normal">
+                      <br> ou parcelado no
+                      <i class="fa fa-credit-card" aria-hidden="true"></i>
+                      com juros de 6%.</span>
+                  </p>
+                </div>
+                <hr>
+                <div class="card-footer footer-img-content p-0 mb-1 border-0">
+                <a href="{{ route('product.show', ['id' => $product->id ]) }}" class="nav-link  bg-dark text-light ">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                    Detalhes
+                  </a>
+                </div>
               </div>
-              <img src="assets/site/img/product-img/01.jpg" class="card-img" alt="">
-              <hr>
-              <div class="card-subtitle">
-                <p class="text-danger font-weight-bold pl-2">R$ 65,00
-                  <span class="text-dark font-italic font-weight-normal">
-                    <br> ou parcelado no
-                    <i class="fa fa-credit-card" aria-hidden="true"></i>
-                    com juros de 6%.</span>
-                </p>
-              </div>
-              <hr>
-              <div class="card-footer footer-img-content p-0 mb-1 border-0">
-              <a href="{{ route('product.show','01') }}" class="nav-link  bg-dark text-light ">
-                  <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                  Detalhes
-                </a>
-              </div>
-  
+              <!-- /col Galeria -->
             </div>
-            <!-- /col Galeria -->
-          </div>
-  
-          <!-- col Galeria -->
-          <div class="col-6 col-lg-3">
-  
-            <div class="card-block card-width mb-5">
-              <div class="card-header  text-light text-center text-md-left bg-dark">
-                Camisa Polo
-              </div>
-              <img src="assets/site/img/product-img/01.jpg" class="card-img" alt="">
-              <hr>
-              <div class="card-subtitle">
-                <p class="text-danger font-weight-bold pl-2">R$ 65,00
-                  <span class="text-dark font-italic font-weight-normal">
-                    <br> ou parcelado no
-                    <i class="fa fa-credit-card" aria-hidden="true"></i>
-                    com juros de 6%.</span>
-                </p>
-              </div>
-              <hr>
-              <div class="card-footer  footer-img-content p-0 mb-1 border-0">
-                <a href="{{ route('product.show','02') }}" class="nav-link  bg-dark text-light ">
-                  <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                  Detalhes
-                </a>
-              </div>
-  
-            </div>
-            <!-- /col Galeria -->
-          </div>
-  
-  
-  
-          <!-- col Galeria -->
-          <div class="col-6 col-lg-3">
-  
-            <div class="card-block card-width mb-5">
-              <div class="card-header  text-light text-center text-md-left bg-dark">
-                Camisa Polo
-              </div>
-              <img src="assets/site/img/product-img/01.jpg" class="card-img" alt="">
-              <hr>
-              <div class="card-subtitle">
-                <p class="text-danger font-weight-bold pl-2">R$ 65,00
-                  <span class="text-dark font-italic font-weight-normal">
-                    <br> ou parcelado no
-                    <i class="fa fa-credit-card" aria-hidden="true"></i>
-                    com juros de 6%.</span>
-                </p>
-              </div>
-              <hr>
-              <div class="card-footer footer-img-content p-0 mb-1 border-0">
-                <a href="{{ route('product.show','03') }}" class="nav-link  bg-dark text-light ">
-                  <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                  Detalhes
-                </a>
-              </div>
-  
-            </div>
-            <!-- /col Galeria -->
-          </div>
-  
-          <!-- col Galeria -->
-          <div class="col-6 col-lg-3">
-  
-            <div class="card-block card-width mb-5">
-              <div class="card-header  text-light text-center text-md-left bg-dark">
-                Camisa Polo
-              </div>
-              <img src="assets/site/img/product-img/01.jpg" class="card-img" alt="">
-              <hr>
-              <div class="card-subtitle">
-                <p class="text-danger font-weight-bold pl-2">R$ 65,00
-                  <span class="text-dark font-italic font-weight-normal">
-                    <br> ou parcelado no
-                    <i class="fa fa-credit-card" aria-hidden="true"></i>
-                    com juros de 6%.</span>
-                </p>
-              </div>
-              <hr>
-              
-              <div class="card-footer footer-img-content p-0 mb-1 border-0">
-                <a href="{{ route('product.show','04') }}" class="nav-link  bg-dark text-light ">
-                  <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                  Detalhes
-                </a>
-              </div>
-  
-            </div>
-            <!-- /col Galeria -->
-          </div>
+          @endforeach
+          
+
         </div>
         <!-- /row galeria -->
       </div>
