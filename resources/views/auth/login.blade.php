@@ -46,7 +46,6 @@
           </div>
           <hr class="my-3">
           <a class="btn btn-link text-center" href="{{ route('register') }}" role="button">Criar conta</a>
-        </form>
       </div>
     </div>
   </div>

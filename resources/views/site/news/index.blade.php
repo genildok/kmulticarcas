@@ -1,4 +1,6 @@
-@extends('site.layout.master') @section('content')
+@extends('site.layout.master') 
+
+@section('content')
 
 <div class="container pt-5 pl-3 pr-3 pb-3">
     <div class="alert alert-danger">

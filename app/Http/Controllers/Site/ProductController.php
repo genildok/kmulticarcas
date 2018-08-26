@@ -5,108 +5,83 @@ namespace App\Http\Controllers\Site;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Model\Product;
+use App\Model\Feature;
+use App\Model\Brand;
 
 class ProductController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index(Request $request)
-    {   
-     
-    }
+    private $product;
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+    public function __construct(Product $product) {
+        $this->product = $product;
     }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+   
     public function show($id)
     {
-        $product = Product::find($id);
-        return view('site.details.index',compact('product'));
+
+        $product = $this->product->join('features','features.product_id','=','products.id')
+                                 ->select('products.*','features.*')
+                                 ->where('products.id',$id)->get();
+      
+        $brands = Brand::find($product[0]->brand_id)->products;
+
+       
+            // dd($product);
+        
+
+        return view('site.details.index',compact('product','brands','features'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
+    public function search(Request $request)
+    {   
+        //retorna produtos pelo filtro form search
+        
+        $search = ($request->search) ? $request->search : null ;
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
+        $products = $this->product->where('name','LIKE','%' . $search . '%')
+                                  ->orWhere('description','LIKE','%' . $search .'%')
+                                  ->get();
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
+
+        if ( is_null($search) or sizeof($products) == 0) {
+            $search = ($search) ? $search : 'Nenhum produto buscado';
+            $products = $this->product->inRandomOrder()->limit(15)->get();
+        }
+
+
+        return view('site.product.index',compact('products','search'));
     }
 
     public function sale()
     {
+
         /** return sales db **/
         $title = "Produtos em Oferta";
         $page = "Produtos";
         $category = "Ofertas";
 
+        $products = $this->product->where('sales',1)->get();
+
         return view('site.product.index',compact(
-            'title',$title,'page',$page,'category',$category));
+            'title','page','category','products'));
     }
 
     public function brand(Request $request)
     {
-        $brand      = ucfirst($request->q);
-        $page       = "Produtos";
-        $title      = "Produtos da " . $brand;;
-        $category   = "Marca";
+        $brand_id = $request->q;
 
+        $products   = $this->product->where('brand_id',$brand_id)->get();
+
+        // $brand      =  (sizeof($products) == 0) ? null : $products[0]->brand->brand;
+        $brand      = (sizeof($products) == 0) ? null : $products[0]->brand->brand;
+        $page       = "Produtos";
+        $title      = "Produtos da " . ucfirst($brand);
+        $category   = "Marca"; 
+        
         return view('site.product.index', compact(
-            'title',$title,
-            'page',$page,
-            'category',$category,'brand',$brand));
+            'title',
+            'page',
+            'category','brand','products'));
     }
 
     public function new()
@@ -116,11 +91,8 @@ class ProductController extends Controller
         $page       = "Produtos";
         $category   = "Novidades";
 
-        
-       return view('site.product.index', compact(
-                    'title',$title,
-                    'page',$page,
-                    'category',$category));
+        $products = $this->product->orderBy('created_at','desc')->limit(10)->get();
+       return view('site.product.index', compact('title','page','category','products'));
         
     }
 }

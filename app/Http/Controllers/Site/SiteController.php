@@ -5,21 +5,35 @@ namespace App\Http\Controllers\Site;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Model\Product;
+use App\Model\Brand;
+
 
 class SiteController extends Controller
 {
 
-    public function index()
-    {   
-        $page = 'index';
-        $products = Product::limit(4)->get();
-        return view('site.home.index', compact('page','products'));
+    private $product;
+    private $brands;
+
+
+    public function __construct(Product $product,Brand $brand) {
+        $this->product = $product;
+        $this->brands = $brand;
     }
 
 
+    public function index()
+    {   
+        $page       = 'index';
+        $products   = $this->product
+                           ->where('sales','=',1)
+                           ->inRandomOrder()->limit(4)->get();
+
+        return view('site.home.index', compact('page','products'));
+    }
+
     public function contact()
     {
-        /** return form contact */
+        /** Retorna o form contact */
 
         $title      = "Contato";
         $page       = "Site";
@@ -30,6 +44,7 @@ class SiteController extends Controller
                     'page',$page,
                     'category',$category ));
     }
+
     public function send_contact(Request $request)
     {
         /* Send message */
@@ -47,6 +62,19 @@ class SiteController extends Controller
     {
         $message = "Está página está em construção";
         return view('site.cart.cart_add',compact('message',$message));
+    }
+
+    public function error404()
+    {
+        return view('site.errors.404');
+    }
+
+    public function getModel()
+    {
+        // return $this->brands->get();
+
+        $brands = $this->brands->get();
+        return $brands;
     }
 
 }

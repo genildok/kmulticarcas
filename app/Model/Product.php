@@ -5,11 +5,12 @@ namespace App\Model;
 use Illuminate\Database\Eloquent\Model;
 use App\Model\Supplier;
 use App\Model\Feature;
+use App\Model\Brand;
 
 class Product extends Model
 {
     
-    protected $fillable = ['supplier_id','name','price','description','image','sales'];
+    protected $fillable = ['supplier_id','name','price','description','quantity','image','sales'];
 
     public function colors($color = null)
     {
@@ -51,5 +52,10 @@ class Product extends Model
     public function supplier()
     {
         return $this->belongsTo(Supplier::class);
+    }
+    
+    public function brand()
+    {
+        return $this->belongsTo(Brand::class);
     }
 }

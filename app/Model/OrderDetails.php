@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Model\Painel;
+namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Model\Order;

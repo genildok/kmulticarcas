@@ -1,7 +1,7 @@
 <!-- Footer -->
 <div class="row footer">
   <!-- row links -->
-  @if(!request()->is('login') and !request()->is('register'))
+  @if(!request()->is('login') and !request()->is('register') and !request()->is('painel/login'))
     <div class="col-md-12 links">
         <nav class="nav justify-content-center">
             <a class="nav-link" href="{{ route('site.index') }}">Home</a>
@@ -16,7 +16,7 @@
     </div>
   @endif
     <!-- col address -->
-    <div {{ request()->is('login') ? 'class=col-md-12 col-12' : 'class=col-md-6 col-12' }} >
+    <div {{ request()->is('login') || request()->is('painel/login') ? 'class=col-md-12 col-12' : 'class=col-md-6 col-12' }} >
       <div class="address">
         <h4>Kaeller Multimarcas</h4>
         (21) 3358-5247 |
@@ -46,7 +46,7 @@
         </div>
     </div>
   <!-- col copyright -->
-  @if(!request()->is('login') and !request()->is('register'))
+  @if(!request()->is('login') and !request()->is('register') and !request()->is('painel/login'))
       <div class="col-md-10 copyright">
           <div class="">
               <span>

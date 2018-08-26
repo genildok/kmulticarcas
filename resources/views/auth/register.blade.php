@@ -22,7 +22,7 @@
         <form class="form-check-inline login-form" action="{{ route('register') }}" method="post">
           <div class="form-group">
             <label for="user">Usuário:</label>
-            <input type="text" name="name" class="form-control" placeholder="Nome" aria-describedby="helpId">
+            <input type="text" name="firstName" class="form-control" placeholder="Nome" aria-describedby="helpId">
               @if($errors->has('name'))
                 <small id="helpId" class="text-danger">{{ $errors->first('name') }}</small>
               @endif
@@ -54,7 +54,7 @@
               <button type="submit" class="btn btn-primary btn-block mt-4">Criar</button>
             </div>
             <div class="col-6">
-              <button type="button" onclick="location.href='{{ route('login') }}'" class="btn btn-warning btn-block  mt-4">Login</button>
+              <button type="button" onclick="location.href='{{ route('login') }}'" class="btn btn-warning btn-block  mt-4">Voltar</button>
             </div>
           </div>
           <hr class="my-3">

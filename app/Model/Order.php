@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Model\Painel;
+namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Model\User;
+use App\User;
 use App\Model\Product;
 use App\Model\OrderDetails;
 

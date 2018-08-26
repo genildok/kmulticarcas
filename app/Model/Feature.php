@@ -7,11 +7,11 @@ use App\Model\Product;
 
 class Feature extends Model
 {
-    protected $fillable = ['product_id','color','size','brand','quantity'];
+    protected $fillable = ['product_id','color','size','brand','quantity_item'];
 
 
     public function products()
     {
-        return belongsToMany(Product::class);
+        return $this->belongsToMany(Product::class);
     }
 }

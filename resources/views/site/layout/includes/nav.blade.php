@@ -72,9 +72,10 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Marcas</a>
         <div class="dropdown-menu" aria-labelledby="dropdownId" style="border:none">
-          <a class="dropdown-item" href="{{ route('product.brand',['q' => 'nike']) }}">Nike</a>
-          <a class="dropdown-item" href="{{ route('product.brand',['q' => 'reserva']) }}">Reserva</a>
-          <a class="dropdown-item" href="{{ route('product.brand',['q' => 'adidas']) }}">Adidas</a>
+          
+         {{-- Include nav_menu --}}
+         @include('site.layout.includes.nav_menu')
+        
         </div>
       </li>
       <li class="nav-item">
