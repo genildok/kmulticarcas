@@ -58,8 +58,7 @@ class Handler extends ExceptionHandler
                 case 404:
                     return redirect()->route('error.404');
                 default:
-                    # code...
-                    break;
+                return redirect()->route('error.404');
             }
 
         } 

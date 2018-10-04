@@ -3,9 +3,9 @@
   <div class="menu-action">
     <ul class="nav justify-content-center justify-content-lg-end justify-content-md-end">
       <li class="nav-item">
-        <a class="nav-link text-light" href="{{ url('/cart') }}">
+        <a class="nav-link text-light" href="{{ session()->has('cart') && sizeof(session()->get('cart')->getItems() > 0) ? route('cart.list') : null }}">
           <i class="fa  fa-shopping-cart" aria-hidden="true"></i>
-          <i class="badge badge-pill badge-danger float-right icon-status-cart">2</i>
+          <i class="badge badge-pill badge-danger float-right icon-status-cart">{{ session()->has('cart') ? session()->get('cart')->getTotalCartItems() : null }}</i>
         </a>
       </li>
       <li class="nav-item">
@@ -48,10 +48,10 @@
       <i class="fa fa-user text-light" aria-hidden="true"></i>
     </button>
     <!-- Btn cart -->
-    <button class="navbar-toggler hidden-lg-up btn-cart" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+  <button class="navbar-toggler hidden-lg-up btn-cart" type="button" data-toggle="collapse" onclick=location.href="{{ session()->has('cart') && sizeof(session()->get('cart')->getItems() > 0) ? route('cart.list') : null }}"
       aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fa fa-shopping-cart text-light" aria-hidden="true"></i>
-      <span class="badge badge-pill  badge-danger icon-status-cart">2</span>
+        <span class="badge badge-pill  badge-danger icon-status-cart">{{ session()->has('cart') ? session()->get('cart')->getTotalCartItems() : 0 }}</span>
     </button>
   </div>
 

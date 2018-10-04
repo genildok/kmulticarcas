@@ -13,7 +13,7 @@
   
             <div class="card-block card-width mb-5">
               <div class="card-header  text-light text-center text-md-left bg-dark">
-                {{ $product->name }}
+                {{ $product->brand->brand }}
               </div>
               <img src="{{ asset('assets/painel/img/' . $product->image) }}" class="card-img" alt="">
               <hr>

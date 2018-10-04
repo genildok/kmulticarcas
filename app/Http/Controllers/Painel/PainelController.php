@@ -39,10 +39,10 @@ class PainelController extends Controller
                            
         $total_costs = $this->cost->sum('total');
         $total_payment = $this->getTotalPayment($total_costs);
-    //    dd($products);
+   
         return view('painel.dashboard.index',compact('products','total_order','waiting_order','total_costs','total_payment'));
     }
-
+    
     private function getTotalPayment($total_costs)
     {
        return $this->payment->sum('payment_amount') - $total_costs;

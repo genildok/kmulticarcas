@@ -20,14 +20,10 @@ class ProductController extends Controller
     {
 
         $product = $this->product->join('features','features.product_id','=','products.id')
-                                 ->select('products.*','features.*')
+                                 ->select('features.*','products.*')
                                  ->where('products.id',$id)->get();
-      
+                                 
         $brands = Brand::find($product[0]->brand_id)->products;
-
-       
-            // dd($product);
-        
 
         return view('site.details.index',compact('product','brands','features'));
     }
@@ -41,7 +37,6 @@ class ProductController extends Controller
         $products = $this->product->where('name','LIKE','%' . $search . '%')
                                   ->orWhere('description','LIKE','%' . $search .'%')
                                   ->get();
-
 
         if ( is_null($search) or sizeof($products) == 0) {
             $search = ($search) ? $search : 'Nenhum produto buscado';

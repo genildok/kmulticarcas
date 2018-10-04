@@ -22,12 +22,20 @@ Route::prefix('/')->group(function(){
         $this->get('/{id}','Site\ProductController@show')->name('product.show');
     });
 
-   
-
+    // Route cart
+    Route::prefix('shoppingcart')->group(function(){
+        
+        $this->post('/add','Site\CartController@cartAdd')->name('cart.add');
+        $this->post('/update/item','Site\CartController@cartUpdateQty')->name('cart.update.quantity');
+        $this->get('/remove/{id}','Site\CartController@cartRemove')->name('cart.remove');
+        $this->get('/remove','Site\CartController@cartRemoveAll')->name('cart.remove.all');
+        $this->get('/','Site\CartController@shoppingCart')->name('cart.list');
+        
+    });
+    Route::prefix('coupon')->group(function(){
+        $this->post('/cupom/validar','Site\CouponController@couponValidation')->name('coupon.validate');
+    });
 });
-
-
-
 
 
 // Route painel
@@ -67,6 +75,13 @@ Route::prefix('painel')->group(function(){
     $this->get('/marca/novo','Painel\BrandController@create')->name('painel.brand.form');
     $this->post('/marca/novo','Painel\BrandController@store')->name('painel.brand.post');
     $this->post('/marca/remover','Painel\BrandController@destroy')->name('painel.brand.delete');
+  
+    $this->get('/cupom','Painel\CouponController@index')->name('painel.coupon.index');
+    $this->get('/cupom/editar/{id}','Painel\CouponController@show')->name('painel.coupon.show');
+    $this->get('/cupom/novo/{id}','Painel\CouponController@create')->name('painel.coupon.create');
+    $this->post('/cupom/novo/','Painel\CouponController@store')->name('painel.coupon.store');
+    $this->post('/cupom/atualizar/','Painel\CouponController@update')->name('painel.coupon.update');
+    $this->post('/cupom/ativar/{id}','Painel\CouponController@active')->name('painel.coupon.active');
   
     $this->get('/','Painel\PainelController@index')->name('painel.dashboard');
 

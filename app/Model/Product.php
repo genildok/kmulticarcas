@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use App\Model\Supplier;
 use App\Model\Feature;
 use App\Model\Brand;
+use App\Model\Coupon;
 
 class Product extends Model
 {
@@ -46,7 +47,7 @@ class Product extends Model
 
     public function features()
     {
-        return $this->belongsToMany(Feature::class);
+        return $this->hasMany(Feature::class,'product_id');
     }
 
     public function supplier()
@@ -57,5 +58,10 @@ class Product extends Model
     public function brand()
     {
         return $this->belongsTo(Brand::class);
+    }
+
+    public function coupon()
+    {
+        return $this->hasOne(Coupon::class);
     }
 }

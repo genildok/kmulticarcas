@@ -31,7 +31,6 @@ class ProductController extends Controller
         $products = $this->product->join('features','products.id','=','features.product_id')
                                   ->select('features.id as id_feature','features.*','products.*')->paginate(10);
 
-
         return view('painel.product.list', compact('products','title','subTitle'));
     }
 

@@ -92,6 +92,18 @@
               {{-- <li class="{{ Request::is('painel/marca/remover') ? "active" : "" }}" ><a href="{{ route('painel.brand.delete') }}"><i class="fa fa-circle-o"></i>Remover</a></li> --}}
               </ul>
             </li>
+          <li class="treeview {{ Request::is('painel/cupom') ? "active" : "" }}">
+              <a href="#">
+                <i class="fa fa-dashboard"></i> <span>Cupom</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li class="{{ Request::is('painel/produto/editar') || Request::is('painel/produto/editar/*') ? "active" : "" }}"><a href="{{ route('painel.product.list') }}"><i class="fa fa-circle-o"></i>Novo</a></li>
+                <li class="{{ Request::is('painel/cupom') || Request::is('painel/cupom/') ?  "active" : "" }}" ><a href="{{ route('painel.coupon.index') }}"><i class="fa fa-circle-o"></i>Listar</a></li>
+              </ul>
+            </li>
         </section>
         <!-- /.sidebar -->
       </aside>

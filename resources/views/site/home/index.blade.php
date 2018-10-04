@@ -12,9 +12,9 @@
           @foreach ($products as $product)
             <div class="col-6 col-lg-3">
     
-              <div class="card-block card-width mb-5">
+              <div class="card-block card-width mb-5 border-1">
                 <div class="card-header  text-light text-center text-md-left bg-dark">
-                    {{ $product->name }}
+                    {{ $product->brand->brand }}
                 </div>
                 <img src="{{ asset('assets/painel/img/' . $product->image) }}" class="card-img" alt="">
                 <hr>
@@ -27,7 +27,7 @@
                   </p>
                 </div>
                 <hr>
-                <div class="card-footer footer-img-content p-0 mb-1 border-0">
+                <div class="footer-img-content p-0 mb-1 border-0">
                 <a href="{{ route('product.show', ['id' => $product->id ]) }}" class="nav-link  bg-dark text-light ">
                     <i class="fa fa-plus-circle" aria-hidden="true"></i>
                     Detalhes
